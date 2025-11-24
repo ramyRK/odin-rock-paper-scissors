@@ -1,6 +1,12 @@
 function getComputerChoice(){
-    return Math.floor((Math.random()*3)+1)
+    let choice =Math.floor((Math.random()*3)+1)
+    switch(choice){
+        case 1:
+            return 'Rock'
+        case 2:
+            return 'Paper'
+        case 3:
+            return 'Scissors'        
+    }
 }
 
-
-console.log(getComputerChoice())
